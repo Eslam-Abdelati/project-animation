@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.city {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background: url(../imag/transportation-tower-sun-tree-summer.jpg) center/cover;
+    bottom: 400px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.rod {
+    position: absolute;
+    display: block;
+    width: 600%;
+    height: 400px;
+    background: url(../imag/road.jpg);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    /* animation: rod 3s linear forwards 1s; */
+}
+/* @keyframes rod {
+    
+    100%{
+        transform: translateX(-3600px);
+    }
+} */
+.car1,.car2,.car3,.car4,.car5,.car6 {
+    width: 200px;
+    position: absolute;
+    bottom: 350px;
+    z-index: 3; 
+}
+.car-img {
+    width: 100%;
+}
+.wheel {
+    position: absolute;
+    
+}
+.wheel img {
+    width: 37px;
+    height: 37px;
+    
+}
+.wheel1 img {
+    animation: wheel 3s forwards linear 1s;
+}
+.wheel2 img {
+    animation: wheel 3s forwards linear 4s;
+}
+.wheel3 img {
+    animation: wheel 3s forwards linear 7s;
+}
+.wheel4 img {
+    animation: wheel 3s forwards linear 10s;
+}
+.wheel5 img {
+    animation: wheel 3s forwards linear 13s;
+}
+.wheel6 img {
+    animation: wheel 3s forwards linear 16s;
+}
+@keyframes wheel {
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.bac-wheel {
+    position: absolute;
+    top: -45px;
+    left: 17px;
+}
+.front-wheel {
+    position: absolute;
+    top: -45px;
+    left: 139px;
+}
+
+.car1 {
+    left: 0;
+    animation: car1 3s forwards linear 1s;
+}
+@keyframes car1 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1100px;
+    }
+}
+/* //////////////////////////////////////////////////////////////////// */
+.car2 {
+    bottom: 280px;
+    right: 0;
+    transform: rotateY(180deg);
+    animation: car2 3s forwards linear 4s;
+}
+@keyframes car2 {
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 1100px;
+    }
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+.car3 {
+    bottom: 210px;
+    left: 0;
+    animation: car3 3s forwards linear 7s;
+}
+@keyframes car3 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1100px;
+    }
+}
+/* ///////////////////////////////////////////////////////////////////// */
+.car4 {
+    bottom: 140px;
+    right: 0;
+    transform: rotateY(180deg);
+    animation: car4 3s forwards linear 10s;
+}
+@keyframes car4 {
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 1100px;
+    }
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+.car5 {
+    bottom: 70px;
+    left: 0;
+    animation: car5 3s forwards linear 13s;
+}
+@keyframes car5 {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1100px;
+    }
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+.car6 {
+    bottom: 0px;
+    right: 0;
+    transform: rotateY(180deg);
+    animation: car6 3s forwards linear 16s;
+}
+@keyframes car6 {
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 1100px;
+    }
+}
